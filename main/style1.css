@@ -1,0 +1,1364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  word-break: keep-all;
+  width: 100%;
+  min-width: 100%;
+  background-color: none;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: black;
+  overflow-x: hidden;
+}
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+h1,
+h2 {
+  color: white;
+  font-size: 36pt;
+  font-weight: 900;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+h3,
+p,
+button {
+  font-size: 18pt;
+  font-weight: 400;
+  color: white;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+#header {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  z-index: 1;
+  background-color: black;
+}
+#header .headerBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.7;
+  object-fit: cover;
+}
+#header .bgGradation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+#header .logoBtnContainer {
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+}
+
+#header .logoBtnContainer .logo {
+  float: left;
+  width: 30%;
+  height: 100px;
+  margin-left: 9.8%;
+}
+
+#header .logoBtnContainer .logo img {
+  aspect-ratio: auto;
+  height: 80px;
+  user-select: none;
+}
+
+#header .logoBtnContainer .BtnContainer {
+  float: right;
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-basis: auto;
+  align-items: center;
+  width: 40%;
+  height: 30%;
+  margin-right: 9.8%;
+}
+
+#header .logoBtnContainer .BtnContainer .languageContainer,
+#footer .languageContainer {
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+#header .logoBtnContainer .BtnContainer .languageContainer img:first-of-type,
+#footer .languageContainer img:first-of-type {
+  position: absolute;
+  height: 17px;
+  top: 8px;
+  left: 11px;
+  z-index: 1;
+  user-select: none;
+}
+#header .logoBtnContainer .BtnContainer .languageContainer img:last-of-type,
+#footer .languageContainer img:last-of-type {
+  position: absolute;
+  height: 17px;
+  top: 8px;
+  right: 11px;
+  z-index: 1;
+  user-select: none;
+}
+
+#header .logoBtnContainer .BtnContainer .languageContainer .languageSelector,
+#footer .languageContainer .languageSelector {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #5e5e5f;
+  border-radius: 4px;
+  padding-left: 40px;
+  font-size: 13pt;
+  font-weight: 500;
+  /* color: white; */
+  color: white;
+  background-color: #15131200;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 2;
+}
+
+#header
+  .logoBtnContainer
+  .BtnContainer
+  .languageContainer
+  .languageSelector:focus,
+#footer .languageContainer .languageSelector:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+#header
+  .logoBtnContainer
+  .BtnContainer
+  .languageContainer
+  .languageSelector
+  option,
+#footer .languageContainer .languageSelector option {
+  color: black;
+}
+
+#header .logoBtnContainer .BtnContainer .loginButtonContainer {
+  width: 82px;
+  height: 35px;
+  background-color: #e50914;
+  border-radius: 4px;
+  text-align: center;
+  /* padding-top: 6px; */
+  user-select: none;
+}
+
+#header .logoBtnContainer .BtnContainer .loginButtonContainer:hover {
+  background-color: #c11119;
+}
+
+#header .logoBtnContainer .BtnContainer .loginButtonContainer a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 33px;
+}
+
+#header .features {
+  /* position: relative; */
+  clear: both;
+  width: 100%;
+  height: 25%;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 25px;
+}
+
+#header .features p {
+  /* position: relative; */
+  margin-top: 20px;
+}
+
+#header .membership {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+
+#header .membership p {
+  /* position: relative; */
+  font-size: 15pt;
+  font-weight: 400;
+}
+
+#emailForm {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+#emailForm .email {
+  width: 390px;
+  height: 54px;
+  position: relative;
+  /* top: -15px; */
+  /* border: 2px solid #5e5e5f; */
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  background-color: rgba(22, 22, 22, 0.7);
+  border-radius: 4px;
+  /* padding-left: 16px; */
+}
+#emailForm .email.on {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+#emailForm .email.invalid {
+  border-color: rgb(235, 57, 66);
+}
+#emailForm .email.valid {
+  border-color: rgb(43, 184, 113);
+}
+
+#emailForm .email .emailLabel {
+  position: absolute;
+  /* z-index: -1; */
+  left: 15px;
+  top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  transition-property: top, font-size;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+  user-select: none;
+  pointer-events: none;
+}
+
+#emailForm .email .emailLabel.on {
+  top: 10px;
+  font-size: 11px;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+#emailForm .email .emailInput {
+  width: 100%;
+  padding: 24px 16px 8px 16px;
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 12pt;
+  font-weight: 400;
+  user-select: none;
+}
+
+#emailForm .email .emailInput:autofill,
+#emailForm .email .emailInput:autofill:hover,
+#emailForm .email .emailInput:autofill:focus {
+  -webkit-text-fill-color: white;
+  box-shadow: 0 0 0px 1000px rgba(70, 90, 126, 0.4) inset;
+  transition-property: background-color;
+  transition-delay: 86400s;
+}
+#emailForm .email .emailInput::placeholder {
+  color: transparent;
+}
+
+#emailForm .email .invalidEmail {
+  color: rgba(0, 0, 0, 0);
+  margin-top: 6px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+}
+
+#emailForm .email .invalidEmail.on {
+  color: rgb(235, 57, 66);
+  user-select: text;
+}
+
+#emailForm .email .invalidEmail p {
+  color: inherit;
+  font-size: 13px;
+}
+
+/* click 시 이메일 주소 칸 변하게 하기 */
+
+#emailForm #btn {
+  width: 175px;
+  height: 56px;
+  background-color: #e50914;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 18pt;
+  font-weight: 500;
+  margin-left: 8px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+#emailForm #btn:hover {
+  background-color: #c11119;
+}
+
+.ad {
+  height: 144px;
+  width: auto;
+  background: radial-gradient(
+    51.39% 511.66% at 47.68% -217.91%,
+    #ff9900 0%,
+    #e50914 17.27%,
+    #0e1b4f 79.44%,
+    #000413 100%
+  );
+  position: absolute;
+  top: 628px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  margin: 0 74px;
+}
+
+.ad .adContainer {
+  width: 481px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ad .adContainer .popcornContainer {
+  width: 97px;
+}
+.ad .adContainer .popcornContainer img {
+  margin-left: -20px;
+  width: 150px;
+}
+.ad .adContainer .adTextContainer {
+  width: 353px;
+  height: 100%;
+  font-size: 16pt;
+  font-weight: 500;
+  padding: 0 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ad .adContainer .adTextContainer h2 {
+  font-size: 15pt;
+  font-weight: 500;
+  /* padding: 0 25vw; */
+}
+
+.ad .adContainer .adTextContainer p {
+  font-size: 12pt;
+  margin: 4px 0 8px 0;
+}
+
+.ad .adContainer .adTextContainer button {
+  font-size: 12pt;
+  color: #4482f4;
+  border: 0;
+  text-align: left;
+  background: none;
+  text-decoration: underline;
+  display: flex;
+  gap: 8px;
+  width: fit-content;
+  justify-content: center;
+}
+
+.ad .adContainer .adTextContainer button svg {
+  position: relative;
+  top: -4px;
+}
+
+#main {
+  width: auto;
+  min-height: auto;
+  height: auto;
+}
+
+#main h2 {
+  width: 100%;
+  font-size: 45px;
+  text-align: left;
+}
+
+#main p {
+  font-size: 24px;
+  margin-top: 16px;
+  text-align: left;
+  font-weight: 400;
+}
+
+#main img {
+  width: 100%;
+}
+
+.tv,
+.kids,
+.faqSection,
+.everywhere,
+.offline {
+  padding: 72px 0;
+  margin: 0 164px;
+  display: flex;
+  height: auto;
+  position: relative;
+}
+
+.everywhere,
+.offline {
+  flex-direction: row-reverse;
+}
+
+.tvSection,
+.everywhereSection,
+.kidsSection,
+.offlineSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tvVideoContainer,
+.everywhereVideoContainer,
+.kidsImageContainer,
+.offlineSaveContainer {
+  position: relative;
+  width: 50%;
+}
+
+#main .tvVideoContainer .videoContainer {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  top: 20%;
+  left: 13%;
+  overflow: hidden;
+}
+
+#main .tvVideoContainer .videoContainer .tvVideo {
+  width: 100%;
+  object-fit: contain;
+}
+
+#main .everywhereVideoContainer .videoContainer {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: 63%;
+  max-height: 47%;
+  top: 10%;
+  left: 18%;
+  overflow: hidden;
+}
+
+#main .everywhereVideoContainer .videoContainer .everywhereVideo {
+  width: 100%;
+  object-fit: contain;
+}
+
+#main .offline .offlineSaveContainer .offlineSave {
+  position: absolute;
+  left: 20%;
+  bottom: 5%;
+  width: 60%;
+  margin: 0 auto;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: black;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+#main .offline .offlineSaveContainer .offlineSave img {
+  width: 60px;
+  margin: 0 10px 0 0;
+}
+
+#main .offline .offlineSaveContainer .offlineSave .offlineSaveText p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+#main
+  .offline
+  .offlineSaveContainer
+  .offlineSave
+  .offlineSaveText
+  p:first-of-type {
+  font-size: 16px;
+}
+#main
+  .offline
+  .offlineSaveContainer
+  .offlineSave
+  .offlineSaveText
+  p:last-of-type {
+  font-size: 14px;
+  color: #0071eb;
+}
+
+#main .offline .offlineSaveContainer .offlineSave .SaveGif {
+  position: absolute;
+  background: url('download-icon.gif') center center no-repeat;
+  height: 40px;
+  width: 50px;
+  content: '';
+  background-size: 100%;
+  margin-left: 80%;
+}
+
+#main .grayLine {
+  position: absolute;
+  width: calc(100% + 328px);
+  height: 8px;
+  bottom: -8px;
+  left: -164px;
+  background-color: rgb(35, 35, 35);
+  margin: 0;
+}
+
+#main .faqSection {
+  flex-direction: column;
+  margin: 0 auto;
+  width: 110%;
+  left: -5%;
+  /* max-width: calc(83.33333333333334% - 6rem); */
+}
+#main .faqSection h2 {
+  text-align: center;
+}
+#main .faqSection ol {
+  margin-top: 20px;
+}
+
+#main .faqSection ol li {
+  position: relative;
+
+  margin: 0 10% 8px 10%;
+}
+
+#main .faqSection ol li .faqButton {
+  position: relative;
+  width: 100%;
+  padding: 24px;
+  font-size: 24px;
+  text-align: left;
+  background-color: rgb(45, 45, 45);
+  user-select: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  /* background: none; */
+  cursor: pointer;
+  white-space: normal;
+}
+#main .faqSection ol li .faqButton:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+#main .faqSection ol li .faqButton .plus {
+  position: absolute;
+  width: 28px;
+  top: 31%;
+  right: 50px;
+  display: none;
+}
+
+#main .faqSection ol li .faqButton .minus {
+  position: absolute;
+  width: 24px;
+  top: 31%;
+  right: 50px;
+  display: none;
+}
+
+#main .faqSection ol li .faqButton .plus.on,
+#main .faqSection ol li .faqButton .minus.on {
+  display: block;
+}
+
+#main .faqSection ol li .faqAnswer {
+  background-color: rgb(45, 45, 45);
+
+  /* display: none; */
+  /* padding-top: 40px; */
+  visibility: collapse;
+  max-height: 0;
+
+  margin-top: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  /* transition: all 0.25s ease-in; */
+}
+
+#main .faqSection ol li .faqAnswer.on {
+  /* display: block; */
+  visibility: visible;
+  margin-top: 3px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-height: 500px;
+}
+
+#main .faqSection ol li .faqAnswer p a {
+  text-decoration: underline;
+}
+
+#main .faqSection ol li .faqAnswer p {
+  margin: 0px;
+}
+
+#main .membership {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+
+#main .membership p {
+  /* position: relative; */
+  text-align: center;
+  font-size: 15pt;
+  font-weight: 400;
+}
+
+#footer {
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+  padding: 70px 12% 70px 12%;
+}
+
+#footer .siteMap p,
+#footer .siteMap a,
+#footer .siteMap ul li a,
+#footer .aboutUs h4,
+#footer .aboutUs p,
+#footer .aboutUs a {
+  color: #b3b3b3;
+}
+
+#footer .siteMap p a,
+#footer .siteMap ul li a {
+  text-decoration: underline;
+}
+
+#footer .siteMap p a {
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+#footer section ul li {
+  width: 25%;
+  height: 36px;
+  float: left;
+}
+
+#footer .siteMap ul li a {
+  font-size: 11pt;
+}
+
+#footer .languageContainer {
+  margin: 0 0 18px 0;
+}
+
+#footer .siteMap p {
+  width: 100%;
+  float: left;
+  padding-bottom: 20px;
+  font-size: 12pt;
+}
+
+#footer .aboutUs h4 {
+  margin-bottom: 20px;
+  font-size: 11pt;
+  font-weight: 300;
+}
+
+#footer .aboutUs p {
+  font-size: 9pt;
+}
+
+#footer .aboutUs a {
+  text-decoration: underline;
+  font-size: 9pt;
+}
+/* 
+
+
+
+VVVVV     responsive - 2     VVVVV
+
+
+
+*/
+@media (min-width: 588px) and (max-width: 960px) {
+  h1,
+  #main h2 {
+    font-size: 24pt;
+    text-align: center;
+  }
+
+  #header .logoBtnContainer .logo {
+    margin-top: 15px;
+    margin-left: 3%;
+  }
+
+  #header .logoBtnContainer .logo img {
+    height: 50px;
+  }
+
+  #header .logoBtnContainer .BtnContainer {
+    margin-right: 3%;
+  }
+
+  #header .logoBtnContainer .BtnContainer .languageContainer,
+  #footer .languageContainer {
+    margin-right: 10px;
+  }
+
+  #header .logoBtnContainer .BtnContainer .languageContainer img:first-of-type,
+  #footer .languageContainer img:first-of-type {
+    height: 14px;
+    top: 10px;
+    left: 11px;
+  }
+  #header .logoBtnContainer .BtnContainer .languageContainer img:last-of-type,
+  #footer .languageContainer img:last-of-type {
+    height: 10px;
+    top: 12px;
+    right: 14px;
+  }
+
+  #header .features {
+    padding-top: 60px;
+    margin-top: 0;
+  }
+
+  #header .features p {
+    margin-top: 14px;
+    font-size: 13pt;
+  }
+
+  #header .membership p {
+    /* position: relative; */
+    font-size: 13pt;
+  }
+
+  #header #emailForm .email {
+    margin: 0 0 0 50px;
+    width: 50%;
+  }
+
+  #emailForm #btn {
+    width: 175px;
+    margin: 0 50px 0 4px;
+  }
+
+  .ad {
+    margin: 0 5%;
+  }
+
+  #main div {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  #main div section p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #main .grayLine {
+    width: 130%;
+    left: -80px;
+  }
+
+  #main .tv .tvSection h2 {
+    padding-top: 60px;
+  }
+
+  #main video {
+    position: absolute;
+    z-index: 0;
+    left: -13%;
+  }
+
+  #main .tvVideoContainer .videoContainer,
+  #main .everywhereVideoContainer .videoContainer {
+    overflow: visible;
+  }
+
+  #main .tv .tvSection,
+  #main .everywhere .everywhereSection,
+  #main .kids .kidsSection,
+  #main .offline .offlineSection {
+    width: 100%;
+  }
+
+  #main .tv .tvVideoContainer,
+  #main .everywhere .everywhereVideoContainer,
+  #main .kids .kidsImageContainer,
+  #main .offline .offlineSaveContainer {
+    width: 100%;
+    right: 10%;
+  }
+
+  .tv,
+  .kids,
+  .everywhere,
+  .offline {
+    flex-direction: column;
+  }
+
+  #main .offline .offlineSaveContainer .offlineSave {
+    left: 20%;
+    width: 60%;
+  }
+
+  #main .offline .offlineSaveContainer .offlineSave img {
+    width: 45px;
+  }
+
+  #main .offline .offlineSaveContainer .offlineSave .SaveGif {
+    margin-left: 79%;
+  }
+
+  #main .faqSection {
+    margin: 0;
+    max-width: 100%;
+    left: -60px;
+  }
+
+  #main .faqSection h2 {
+    text-align: center;
+    padding-left: 120px;
+  }
+  #main .faqSection ol {
+    margin-top: 20px;
+    width: 115%;
+  }
+
+  #main .faqSection ol li {
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    margin: 0 10% 8px 12%;
+    /* padding: 4px; */
+  }
+
+  #main .faqSection ol li .faqButton,
+  #main .faqSection ol li .faqAnswer p {
+    font-size: 13pt;
+  }
+
+  #main .faqSection ol li .faqAnswer {
+    /* position: inherit; */
+    padding-right: 24px;
+    left: -10%;
+    margin: 0;
+    width: auto;
+  }
+
+  #main .faqSection ol li .faqButton .plus {
+    position: absolute;
+    width: 22px;
+    margin: 0 0 0 95%;
+    top: 33%;
+    right: 25px;
+  }
+
+  #main .faqSection ol li .faqButton .minus {
+    position: absolute;
+    width: 17px;
+    margin: 0 0 0 95%;
+    top: 40%;
+    right: 28px;
+  }
+
+  #main .membership {
+    margin-top: 20px;
+    left: 70px;
+  }
+
+  #main .membership p {
+    /* position: relative; */
+    width: 80%;
+    font-size: 13pt;
+  }
+
+  #main .membership #emailForm {
+    padding-right: 180px;
+  }
+
+  #main #emailForm .email {
+    margin: 0 0 0 -75px;
+    width: 67%;
+  }
+
+  #main #emailForm .email .invalidEmail {
+    margin-top: 0px;
+    gap: 4px;
+  }
+
+  #main #emailForm .email .invalidEmail.on {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+
+  #main #emailForm .email .invalidEmail p {
+    /* color: inherit; */
+    font-size: 13px;
+    margin-top: 1px;
+    margin-left: -2%;
+    width: 100%;
+  }
+
+  #main #emailForm #btn {
+    width: 175px;
+    margin: 0 -100px 0 4px;
+  }
+
+  #footer {
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    padding: 40px 0 30px 30px;
+  }
+
+  #footer section ul li {
+    width: 50%;
+    height: 36px;
+    float: left;
+  }
+
+  #footer .languageContainer {
+    margin: 10px 0 18px 0;
+  }
+}
+/* 
+
+
+
+VVVVV     responsive - 3     VVVVV
+
+
+
+*/
+@media (min-width: 300px) and (max-width: 588px) {
+  h1,
+  #main h2 {
+    font-size: 24pt;
+    text-align: center;
+  }
+
+  #header {
+    height: 490px;
+    /* 480px */
+  }
+
+  #header .logoBtnContainer {
+    height: 40px;
+  }
+
+  #header .logoBtnContainer .logo {
+    margin-top: 15px;
+    margin-left: 3%;
+  }
+
+  #header .logoBtnContainer .logo img {
+    height: 50px;
+  }
+
+  #header .logoBtnContainer .BtnContainer {
+    margin-right: 4%;
+  }
+
+  #header .logoBtnContainer .BtnContainer .languageContainer {
+    width: 32%;
+    margin-right: 10px;
+    margin-top: 78px;
+  }
+
+  #header .logoBtnContainer .BtnContainer .languageContainer .languageSelector {
+    color: #ffffff00;
+    height: 90%;
+  }
+
+  #header .logoBtnContainer .BtnContainer .loginButtonContainer {
+    width: 72px;
+    height: 30px;
+    margin-bottom: 5px;
+    font-size: 10.5pt;
+    margin-top: 78px;
+  }
+
+  #header .logoBtnContainer .BtnContainer .loginButtonContainer a {
+    line-height: 30px;
+  }
+
+  #header .logoBtnContainer .BtnContainer .languageContainer img:first-of-type {
+    height: 14px;
+    top: 8px;
+    left: 11px;
+  }
+  #header .logoBtnContainer .BtnContainer .languageContainer img:last-of-type {
+    height: 11px;
+    top: 10px;
+    right: 14px;
+  }
+
+  #footer .languageContainer {
+    width: 25%;
+  }
+
+  #footer .languageContainer img:last-of-type {
+    height: 11px;
+    top: 10px;
+  }
+
+  #header .features {
+    margin-top: 0;
+    height: 120px;
+  }
+
+  #header .features p {
+    margin-top: 14px;
+    font-size: 13pt;
+    padding: 0 15px;
+  }
+
+  #header .membership {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #header .membership p {
+    /* position: relative; */
+    font-size: 13pt;
+    padding: 0 15px;
+  }
+
+  #header #emailForm {
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header #emailForm .email {
+    /* margin: 30px 5% 10px 20%; */
+    width: 90%;
+  }
+
+  #header #emailForm #btn {
+    margin: 0;
+    margin-top: 25px;
+    /* margin: 0 5% 10px 5%; */
+    width: 27%;
+    height: 100%;
+    font-size: 13.5pt;
+    padding: 7px 7px 10px 7px;
+    -webkit-box-align: center;
+  }
+
+  #header #emailForm #btn svg {
+    position: relative;
+    top: 2px;
+  }
+
+  #header #emailForm .email .invalidEmail.on {
+    margin-top: 2px;
+  }
+
+  #header #emailForm .email .invalidEmail {
+    margin-top: 2px;
+    gap: 4px;
+  }
+
+  #header #emailForm .email .invalidEmail p {
+    /* color: inherit; */
+    font-size: 13px;
+    margin-top: 1px;
+    margin-left: -3%;
+  }
+
+  .ad {
+    height: 160px;
+    margin: 5%;
+    border-radius: 10px;
+    padding-top: 16px;
+    top: 480px;
+  }
+
+  .ad .adContainer {
+    justify-content: left;
+    padding-left: 5px;
+  }
+
+  .ad .adContainer .popcornContainer {
+    position: absolute;
+    height: 0;
+    z-index: 2;
+  }
+
+  .ad .adContainer .popcornContainer img {
+    position: absolute;
+    top: -135px;
+    margin-left: 15px;
+    width: 130px;
+  }
+
+  #main {
+    width: 100%;
+    margin-top: 100px;
+  }
+  #main div {
+    width: 90%;
+    margin: 0 10%;
+    left: -5%;
+  }
+
+  #main div section p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #main .grayLine {
+    width: 130%;
+    left: -80px;
+  }
+
+  #main .tv .tvSection h2 {
+    padding-top: 60px;
+  }
+
+  #main video {
+    position: absolute;
+    z-index: 0;
+    left: -13%;
+  }
+
+  #main .tvVideoContainer .videoContainer,
+  #main .everywhereVideoContainer .videoContainer {
+    overflow: visible;
+  }
+
+  #main .tv .tvSection,
+  #main .everywhere .everywhereSection,
+  #main .kids .kidsSection,
+  #main .offline .offlineSection {
+    width: 100%;
+  }
+
+  #main .tv .tvVideoContainer,
+  #main .everywhere .everywhereVideoContainer,
+  #main .kids .kidsImageContainer,
+  #main .offline .offlineSaveContainer {
+    width: 100%;
+    /* right: 25%; */
+    left: -9%;
+  }
+
+  .tv,
+  .kids,
+  .everywhere,
+  .offline {
+    flex-direction: column;
+  }
+
+  #main .offline .offlineSaveContainer .offlineSave {
+    left: 14%;
+    width: 70%;
+  }
+
+  #main .offline .offlineSaveContainer .offlineSave img {
+    width: 34px;
+  }
+
+  #main .offline .offlineSaveContainer .offlineSave .SaveGif {
+    margin-left: 84%;
+  }
+
+  #main .faqSection {
+    margin: 0 1px;
+    width: auto;
+    max-width: 100%;
+    left: 0;
+  }
+
+  #main .faqSection h2 {
+    text-align: center;
+    /* padding-left: 120px; */
+  }
+  #main .faqSection ol {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  #main .faqSection ol li {
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    /* margin: 0 10% 8px 12%; */
+    width: auto;
+    margin: 10px 20px;
+  }
+
+  #main .faqSection ol li .faqButton,
+  #main .faqSection ol li .faqAnswer p {
+    font-size: 13pt;
+  }
+
+  #main .faqSection ol li .faqAnswer {
+    /* position: inherit; */
+    padding-right: 24px;
+    left: -10%;
+    margin: 0;
+    width: auto;
+  }
+
+  #main .faqSection ol li .faqButton .plus {
+    position: absolute;
+    width: 22px;
+    margin: 0 0 0 100%;
+    top: 33%;
+    right: 16px;
+  }
+
+  #main .faqSection ol li .faqButton .minus {
+    position: absolute;
+    width: 17px;
+    margin: 0 0 0 100%;
+    top: 33%;
+    right: 19px;
+  }
+
+  #main .membership {
+    margin-top: 20px;
+    /* left: 30px; */
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    left: 0;
+    padding: 0 24px;
+  }
+
+  #main .membership p {
+    /* position: relative; */
+    /* padding-right: 15%; */
+    width: 100%;
+    font-size: 13pt;
+  }
+
+  #main .membership #emailForm {
+    /* padding-right: 20%; */
+    margin-bottom: 36px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #main #emailForm .email {
+    margin: 30px 10% 10px 10%;
+    width: 100%;
+    left: 0;
+  }
+
+  #main #emailForm #btn {
+    margin: 0;
+    margin-top: 10px;
+    width: 31%;
+    height: 100%;
+    font-size: 13.5pt;
+    padding: 7px 7px 10px 7px;
+    -webkit-box-align: center;
+  }
+
+  #main #emailForm .email .invalidEmail.on {
+    margin-left: 0;
+    margin-top: 2px;
+  }
+
+  #main #emailForm .email .invalidEmail {
+    margin-top: 2px;
+    gap: 4px;
+    align-items: left;
+  }
+
+  #main #emailForm .email .invalidEmail p {
+    /* color: inherit; */
+    font-size: 13px;
+    margin-top: 1px;
+    margin-left: -18%;
+  }
+
+  #footer {
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    padding: 40px 10px 30px 30px;
+  }
+
+  #footer section ul li {
+    width: 50%;
+    height: 36px;
+    float: left;
+  }
+
+  #footer .languageContainer {
+    width: 28%;
+    margin: 10px 0 18px 0;
+  }
+}

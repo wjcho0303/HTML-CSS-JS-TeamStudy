@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>signup</title>
+  <link rel="stylesheet" href="paymentPicker.css" />
+  <script src="paymentPicker.js"></script>
+</head>
+
+<body>
+  <div id="appMountPoint">
+    <div id="wrap">
+      <div id="header-wrap">
+        <header id="nf-header">
+          <a href="../../main/main.HTML" class="home-link">
+            <img class="netflix-logo" src="logo.png" alt="netflix-logo" />
+          </a>
+          <a href="../../login/main-login/login.html" class="login-link"> 로그인 </a>
+        </header>
+      </div>
+      <div class="main-wrap">
+        <main id="nf-main">
+          <div class="simpleContainer">
+            <div class="centerContainer">
+
+              <div class="paymentContainer">
+                <div class="paymentPickerHeading">
+                  <div class="stepLogoContainer"><span class="stepLogo paymentStepLogo"></span></div>
+                  <div class="stepHeader-container">
+                    <div class="stepHeader" role="status"><span class="stepIndicator"><b>3</b>/<b>3단계</b></span>
+                      <h1 class="stepTitle">결제 방법 선택</h1>
+                    </div>
+                  </div>
+                  <div class="narrowContainer">
+                    <div class="contextRowFirst">결제 정보는 암호화되며, 결제 방법은 언제든지 변경할 수 있습니다.
+                    </div>
+                    <div class="contextRow">
+                      <div>안심하고 즐기세요.</div>
+                      <div>해지는 온라인으로 간편하게.</div>
+                    </div>
+                  </div>
+                </div>
+                <form method="POST">
+                  <div class="basic-spinner-region">
+                    <button class="paymentPickerFirst paymentPicker" type="button"
+                    onclick="location.href='../../main/main.html'">
+                    <!-- onclick 시 home화면으로 이동 --> <!-- onclick 시 home화면으로 이동 -->
+                      <div class="mopNameAndLogos">
+                        <div class="card-type-text">
+                          <span class="logosContainer">신용카드 또는 체크카드</span>
+                        </div>                        
+                        <div class="logosContainer"><span>
+                            <img src="BC.png">
+                            <img src="Hana.png">
+                            <img src="Hyundai.png">
+                            <img src="KB.png">
+                            <img src="Lotte.png">
+                            <img src="NH.png">
+                            <img src="Samsung.png">
+                            <img src="Shinhan.png">
+                            <img src="UNIONPAY.png"></span>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="paymentPicker" type="button" onclick="location.href='../../main/main.html'">
+                      <!-- onclick 시 home화면으로 이동 -->
+                      <div class="mopNameAndLogos">
+                        <div class="card-type-text">
+                          <span class="logosContainer">간편 결제</span>
+                        </div>
+                        <div class="logosContainer">
+                          <span>
+                            <img src="KAKAOPAY.png">
+                          </span>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="paymentPicker" type="button" onclick="location.href='../../main/main.html'">
+                      <!-- onclick 시 home화면으로 이동 -->
+                      <div class="mopNameAndLogos">
+                        <div class="card-type-text">
+                          <span class="logosContainer">통신사 요금에 통합하기</span>
+                        </div>
+                        <div class="logosContainer">
+                          <span>
+                            <img src="KT.png">
+                          </span>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </main>
+      </div>
+      <div class="footer-wrap">
+        <footer class="nf-footer">
+          <div class="nf-footer-top">
+            <p class="footer-top">질문이 있으신가요? 문의 전화:</p>
+            <a class="footer-top-a">00-308-321-0161 (수신자 부담)</a>
+          </div>
+          <ul class="nf-footer-link-container">
+            <li class="footer-link">
+              <a href="">
+                <span>자주 묻는 질문</span>
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="">
+                <span>고객 센터</span>
+              </a>
+            <li class="footer-link">
+              <a href="">
+                <span>넷플릭스 스토어</span>
+              </a>
+            </li>
+            </li>
+            <li class="footer-link">
+              <a href="">
+                <span>이용 약관</span>
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="">
+                <span>개인정보 처리방침</span>
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="">
+                <span>쿠키 설정</span>
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="">
+                <span>회사 정보</span>
+              </a>
+            </li>
+          </ul>
+          <select name="language-picker" class="language-picker"></select>
+          <div class="copy-text">
+            <div>넷플릭스서비스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0161 (수신자 부담)</div>
+            <div>대표: 레지널드 숀 톰프슨</div>
+            <div>이메일 주소: korea@netflix.com</div>
+            <div>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</div>
+            <div>사업자등록번호: 165-87-00119</div>
+            <div>클라우드 호스팅: Amazon Web Services Inc.</div>
+            <div>공정거래위원회 웹사이트</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

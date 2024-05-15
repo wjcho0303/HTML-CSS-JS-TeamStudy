@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Netflix Sans", Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.body {
+  word-break: keep-all;
+}
+
+#nf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.home-link {
+  margin: 20px;
+}
+
+.netflix-logo {
+  height: 45px;
+  width: 167px;
+  vertical-align: middle;
+  margin: 0 36.375px;
+}
+
+.login-link {
+  width: 90px;
+  height: 57px;
+  float: right;
+  margin: 0 23.488px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #333;
+  line-height: 57px;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.simpleContainer {
+  color: #333;
+  direction: ltr;
+  font-size: 16px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 95px;
+}
+
+.centerContainer {
+  box-sizing: border-box;
+  margin: 0 auto 15px;
+  max-width: 978px;
+  display: block;
+  --layout-container-side-padding: 32px;
+  padding: 20px var(--layout-container-side-padding) 60px;
+}
+
+.paymentContainer {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.paymentPickerHeading {
+  margin-bottom: 20px;
+}
+
+.stepLogoContainer {
+  display: inline-block;
+}
+
+.paymentStepLogo {
+  margin: 20px 0 20px 0;
+  background-size: 50px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  background: url(Lock.png) no-repeat 50% 50%;
+}
+
+.stepHeader {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.stepIndicator {
+  font-size: 13px;
+  text-align: inherit;
+}
+
+.stepTitle {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0 0 0.4em;
+}
+
+.narrowContainer {
+  margin: 0 auto;
+  max-width: 440px;
+}
+
+.contextRowFirst {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.contextRow {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.basic-spinner-region {
+  position: relative;
+  min-height: 50px;
+}
+
+.paymentPicker {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  text-decoration: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  justify-content: space-between;
+  margin: 5px 0;
+  transition: position 0.5s ease-in;
+  width: 100%;
+  appearance: none;
+  background: none;
+  box-sizing: content-box;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.paymentPickerFirst {
+  height: 80px;
+}
+
+.mopNameAndLogos {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: flex-start;
+  padding: 15px 0;
+}
+
+.card-type-text {
+  float: none;
+  margin-bottom: 5px;
+  margin-right: 0;
+  margin-top: 5px;
+  max-width: none;
+}
+
+.logosContainer {
+  margin: 0 15px;
+  overflow: hidden;
+}
+
+.footer-wrap {
+  height: 345.6px;
+  color: #737373;
+  font-size: 1em;
+  min-width: 190px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  background-color: #f3f3f3;
+  opacity: 1;
+}
+
+.footer-wrap a {
+  color: #737373;
+  position: relative;
+}
+
+.nf-footer {
+  margin: 0 30px;
+  width: calc(
+    100% - 60px
+  ); /* 부모 요소인 .footer-wrap과 같은 너비 적용 (좌우 30px씩 여백을 뺀 크기) */
+  height: 100%;
+}
+
+.nf-footer-top {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-top {
+  display: inline;
+  white-space: nowrap;
+}
+
+.footer-top-a {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.footer-top-a:hover {
+  text-decoration: underline;
+}
+
+.footer-link {
+  width: 176px;
+  height: 17px;
+}
+
+.nf-footer-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-link {
+  list-style-type: none;
+  width: calc(
+    33.333% - 20px
+  ); /* 각 요소의 너비를 33.333%로 설정, 좌우 여백을 줄여줌 */
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.footer-link a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative; /* hover 상태일 때 ::after 가상 요소의 위치를 설정하기 위해 relative로 설정 */
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+.language-picker {
+  width: 128px;
+  height: 48px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.language-picker option {
+  font-size: 16px;
+}
+
+.language-picker option[value="korean"] {
+  content: "한국어";
+}
+
+.language-picker option[value="english"] {
+  content: "English";
+}
+
+.copy-text {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+
+.copy-text > div:not(:first-child) {
+  margin-top: 4px;
+}
+
+.copy-text > div:first-child {
+  margin-top: 20px;
+}

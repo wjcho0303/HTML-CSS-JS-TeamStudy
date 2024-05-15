@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" href="nficon2023.ico" />
+    <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
+  </head>
+  <body>
+    <header id="header">
+      <!-- H1은 SEO를 위해서 썼는데 NETFLIX 로고가 여기밖에 없음.. -->
+      <img src="backgroundPoster.jpg" alt="" class="headerBg">
+      <div class="bgGradation"></div>
+
+      <div class="logoBtnContainer">
+        <div class="logo">
+          <img src="Netflix_Logo_PMS.png" alt="NETFLIX LOGO" />
+        </div>
+        <div class="BtnContainer">
+          <div class="languageContainer">
+            <img src="language.png" src="">
+            <img src="triangle.png" src="">
+            <select class="languageSelector">
+              <option value="kr">한국어</option>
+              <option value="en">English</option>
+            </select>
+
+          </div>
+
+          <div class="loginButtonContainer">
+            <!-- <a role="button" href="https://www.netflix.com/kr/login">로그인</a> -->
+            <a role="button" href="../login/main-login/login.html">로그인</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="features">
+        <h1>영화, 시리즈 등을 무제한으로</h2>
+        <p>어디서나 자유롭게 시청하세요. 해지는 언제든 가능합니다.</p>
+      </div>
+      <div class="membership">
+        <p>
+          시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
+          입력하세요.
+        </p>
+        <form method="post" action="#" id="emailForm" autocomplete="email">
+          <div class="email">
+            <label class="emailLabel" >이메일 주소</label>
+            <input autocomplete="email" type="email" name="email" placeholder="이메일 주소" class="emailInput" />
+            <div class="invalidEmail">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="e1vkmu651 default-ltr-cache-2zeu8w e1svuwfo1" data-name="CircleX" role="img" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 8C14.5 11.5899 11.5899 14.5 8 14.5C4.41015 14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 4.41015 14.5 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM4.46967 5.53033L6.93934 8L4.46967 10.4697L5.53033 11.5303L8 9.06066L10.4697 11.5303L11.5303 10.4697L9.06066 8L11.5303 5.53033L10.4697 4.46967L8 6.93934L5.53033 4.46967L4.46967 5.53033Z" fill="currentColor"></path></svg>
+              <p>이메일 주소를 정확히 입력하세요.</p>
+            </div>
+          </div>
+          <button type="button" id="btn">            
+            시작하기
+            <!-- 여기서 svg 태그 넣어야 할 것 같습니다. -->
+            <svg width="24" height="24" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <div class="ad">
+      <div class="adContainer">
+        <div class="popcornContainer">
+          <img src="popcorn.png" alt="팝콘그림">
+        </div>
+        <div class="adTextContainer">
+          <h2>5,500원이면 만날 수 있는 넷플릭스.</h2>
+          <p>광고형 스탠다드 멤버십에 가입하세요.</p>
+        <button type="button" onclick="location.href='../details-view/signup/signup.html'">자세히 알아보기 <!-- 지우면 버튼 누를 시 경로 이동 안됨-->
+        <!-- <button type="button" class="sign-up-button" onclick="location.href='../details-view/signup/signup.html'">자세히 알아보기 -->
+        <svg width="24" height="24" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+      <main id="main">
+
+        <div class="tv">
+          <section class="tvSection">
+            <h2>TV로 즐기세요</h2>
+            <p>
+              스마트 TV, PlayStation, Xbox, Chromecast, Apple TV, 블루레이
+              플레이어 등 다양한 디바이스에서 시청하세요.
+            </p>
+          </section>
+          <div class="tvVideoContainer">
+            <div class="videoContainer">
+            <video
+            class="tvVideo"
+            src="video-tv-0819.m4v"
+            autoplay
+            loop="infinite"
+            muted
+          >
+          tv 영상
+          </video>
+        </div>
+          <img src="tv.png" alt="tv 테두리 배경" />
+          </div>
+          <div class="grayLine"></div>
+        </div>
+
+
+        
+      <div class="everywhere">
+        <section class="everywhereSection">
+          <h2>어디서나 자유롭게 시청하세요</h2>
+          <p>
+            각종 영화와 시리즈를 스마트폰, 태블릿, 노트북, TV에서 무제한으로
+            스트리밍하세요.
+          </p>
+        </section>
+        <div class="everywhereVideoContainer">
+
+          <div class="videoContainer">
+            <video
+            class="everywhereVideo"
+            src="video-devices.m4v"
+            autoplay
+            loop="infinite"
+            muted
+          >
+        </div>
+          <img src="device-pile.png" alt="videoDisplay" />
+        </div>
+        <div class="grayLine"></div>
+      </div>
+
+      
+      <div class="kids">
+        <section class="kidsSection">
+          <h2>어린이 전용 프로필을 만들어 보세요</h2>
+          <p>
+            자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는 모험. 자녀에게 이
+            특별한 경험을 선물하세요. 넷플릭스 회원이라면 무료입니다.
+          </p>
+        </section>
+        <div class="kidsImageContainer">
+          <img src="kids-image.png" alt="어린아이가 있는 이미지"/>
+        </div>
+        <div class="grayLine"></div>
+      </div>
+
+      
+      <div class="offline">
+        <section class="offlineSection">
+          <h2>즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요</h2>
+          <p>비행기, 기차, 잠수함. 어디서든 시청하세요.</p>
+        </section>
+        <div class="offlineSaveContainer">
+          <div class="offlineSave">
+            <img src="boxshot.png" alt="박스샷" />
+            <div class="offlineSaveText">
+              <p>기묘한 이야기</p>
+              <p>저장 중...</p>
+            </div>
+            <div class="SaveGif"></div>
+          </div>
+          <img src="mobile-0819.jpg" alt="오프라인으로 저장하는 그림" />
+        </div>
+        <div class="grayLine"></div>
+      </div>
+
+
+
+      <section class="faqSection">
+        <h2>자주 묻는 질문</h2>
+        <ol>
+          <li class="faq1">
+            <button class="faqButton">넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?
+              <img src="expandbtn.png" alt="펼치기" class="plus on" />
+              <img src="closebtn.png" alt="닫기" class="minus" />
+            </button>
+            <div class="faqAnswer">
+              <p>
+                넷플릭스는 장편 영화, 다큐멘터리, 시리즈, 애니메이션, 각종 상을
+                수상한 넷플릭스 오리지널 등 수많은 콘텐츠를 확보하고 있습니다.
+                마음에 드는 콘텐츠를 원하는 시간에 원하는 만큼 시청하실 수
+                있습니다. <br> <br>
+              </p>
+              <p><a>넷플릭스 콘텐츠를 한번 살펴보세요.</a></p>
+            </div>
+          </li>
+
+          <li class="faq2">
+
+            <button class="faqButton">넷플릭스란 무엇인가요?
+              <img src="expandbtn.png" alt="펼치기" class="plus on" />
+              <img src="closebtn.png" alt="닫기" class="minus" />
+          </button>
+            <div class="faqAnswer">
+              <p>
+                넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션,
+                다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의
+                디바이스에서 시청할 수 있는 스트리밍 서비스입니다.<br> <br>
+              </p>
+              <p>
+                저렴한 월 요금으로 원하는 시간에 원하는 만큼 즐길 수 있습니다.
+                무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 시리즈와 영화가
+                제공됩니다.
+              </p>
+            </div>
+          </li>
+
+          <li class="faq3">
+
+            <button class="faqButton">넷플릭스 요금은 얼마인가요?
+              <img src="expandbtn.png" alt="펼치기" class="plus on" />
+              <img src="closebtn.png" alt="닫기" class="minus" />
+          </button>
+            <div class="faqAnswer">
+              <p>
+                스마트폰, 태블릿, 스마트 TV, 노트북, 스트리밍 디바이스 등 다양한
+                디바이스에서 월정액 요금 하나로 넷플릭스를 시청하세요. 멤버십
+                요금은 월 KRW 17,000부터 KRW 5,500까지 다양합니다. 추가 비용이나
+                약정이 없습니다.
+              </p>
+            </div>
+          </li>
+
+          <li class="faq4">
+
+            <button class="faqButton">어디에서 시청할 수 있나요?
+              <img src="expandbtn.png" alt="펼치기" class="plus on" />
+              <img src="closebtn.png" alt="닫기" class="minus" />
+          </button>
+            <div class="faqAnswer">
+              <p>
+                언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면
+                PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이
+                연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV,
+                스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도
+                언제든지 시청할 수 있습니다.<br> <br>
+              </p>
+              <p>
+                iOS, Android, Windows 10용 앱에서는 좋아하는 시리즈를 저장할
+                수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수
+                없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.
+              </p>
+            </div>
+          </li>
+
+          <li class="faq5">
+
+            <button class="faqButton">멤버십을 해지하려면 어떻게 하나요?
+              <img src="expandbtn.png" alt="펼치기" class="plus on" />
+              <img src="closebtn.png" alt="닫기" class="minus" />
+          </button>
+            <div class="faqAnswer">
+              <p>
+                넷플릭스는 부담 없이 간편합니다. 성가신 계약도, 약정도
+                없으니까요. 멤버십 해지도 온라인에서 클릭 두 번이면 완료할 수
+                있습니다. 해지 수수료도 없으니 원할 때 언제든 계정을 시작하거나
+                종료하세요.
+              </p>
+            </div>
+          </li>
+
+          <li class="faq6">
+
+            <button class="faqButton">아이들이 넷플릭스를 봐도 좋을까요?
+              <img src="expandbtn.png" alt="펼치기" class="plus on" />
+              <img src="closebtn.png" alt="닫기" class="minus" />
+          </button>
+            <div class="faqAnswer">
+              <p>
+                멤버십에 넷플릭스 키즈 환경이 포함되어 있어 자녀가 자기만의
+                공간에서 가족용 시리즈와 영화를 즐기는 동안 부모가 이를 관리할
+                수 있습니다.<br> <br>
+              </p>
+              <p>
+                키즈 프로필과 더불어 PIN 번호를 이용한 자녀 보호 기능도 있어,
+                자녀가 시청할 수 있는 콘텐츠의 관람등급을 제한하고 자녀의 시청을
+                원치 않는 특정 작품을 차단할 수도 있습니다.
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="membership">
+          <p>
+            시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
+            입력하세요.
+          </p>
+          <form method="post" action="#" id="emailForm" autocomplete="email">
+            <div class="email">
+              <label class="emailLabel" >이메일 주소</label>
+              <input autocomplete="email" type="email" name="email" placeholder="이메일 주소" class="emailInput" />
+              <div class="invalidEmail">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="e1vkmu651 default-ltr-cache-2zeu8w e1svuwfo1" data-name="CircleX" role="img" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 8C14.5 11.5899 11.5899 14.5 8 14.5C4.41015 14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 4.41015 14.5 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM4.46967 5.53033L6.93934 8L4.46967 10.4697L5.53033 11.5303L8 9.06066L10.4697 11.5303L11.5303 10.4697L9.06066 8L11.5303 5.53033L10.4697 4.46967L8 6.93934L5.53033 4.46967L4.46967 5.53033Z" fill="currentColor"></path></svg>
+                <p>이메일 주소를 정확히 입력하세요.</p>
+              </div>
+            </div>
+            <button type="button" id="btn">
+              시작하기
+              <svg width="24" height="24" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+            </button>            
+          </form>
+
+        </div>
+        <div class="grayLine"></div>
+      </section>
+
+
+
+      </main>
+
+      <footer id="footer">
+        <section class="siteMap">
+          <p class="anyQuestion">
+            질문이 있으신가요? 문의전화: <a>00-308-321-0161 (수신자 부담)</a>
+          </p>
+          <ul class="siteMapList">
+            <li><a>자주 묻는 질문</a></li>
+            <li><a>고객 센터</a></li>
+            <li><a>계정</a></li>
+            <li><a>미디어 센터</a></li>
+            <li><a>투자 정보(IR)</a></li>
+            <li><a>입사 정보</a></li>
+            <li><a>넷플릭스 지원 디바이스</a></li>
+            <li><a>이용 약관</a></li>
+            <li><a>개인정보 처리방침</a></li>
+            <li><a>쿠키 설정</a></li>
+            <li><a>회사 정보</a></li>
+            <li><a>문의하기</a></li>
+            <li><a>속도 테스트</a></li>
+            <li><a>법적 고지</a></li>
+            <li><a>오직 넷플릭스에서</a></li>
+            <li><a> </a></li>
+          </ul>
+        </section>
+        <div class="languageContainer">
+          <img src="language.png" src="">
+          <img src="triangle.png" src="">
+          <select class="languageSelector">
+            <option value="kr">한국어</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <section class="aboutUs">
+          <h4>넷플릭스 대한민국</h4>
+          <p>
+            넷플릭스서비시스코리아 유한회사 통신판매업신고번호:
+            제2018-서울종로-0426호 전화번호: 00-308-321-0161 (수신자 부담)
+          </p>
+          <p>대표: 레지널드 숀 톰프슨</p>
+          <p>이메일 주소: korea@netflix.com</p>
+          <p>
+            주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층
+            우편번호 03161
+          </p>
+          <p>사업자등록번호: 165-87-00119</p>
+          <p>클라우드 호스팅: Amazon Web Services Inc.</p>
+          <p><a>공정거래위원회 웹사이트</a></p>
+        </section>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="main.js"></script>
+  </body>
+</html>

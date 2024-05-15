@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Netflix Sans", sans-serif;
+}
+
+.body {
+  word-break: keep-all;
+}
+
+#nf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.home-link {
+  margin: 20px;
+}
+
+.netflix-logo {
+  height: 45px;
+  width: 167px;
+  vertical-align: middle;
+  margin: 0 36.375px;
+}
+
+.login-link {
+  width: 90px;
+  height: 57px;
+  float: right;
+  margin: 0 23.488px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #333;
+  line-height: 57px;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* 100% 화면 너비 */
+  height: 100vh; /* 100% 화면 높이 */
+  overflow: hidden;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  align-items: center;
+  width: 400.2px;
+  height: 720.8px;
+  padding: 50px 32px;
+  margin-bottom: 15px;
+}
+
+.step-title {
+  display: inline-block;
+  text-align: center;
+}
+
+#check-with-circle {
+  width: 50px;
+  height: 50px;
+  margin: 100px 0 20px;
+}
+
+.contextBody {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.checkmark-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.checkmark-group--row {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.check {
+  overflow: hidden;
+  align-self: flex-start;
+  width: 24px;
+  height: 24px;
+}
+
+.checkmark-group--textdata {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.button-container {
+  width: 340px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.next-button {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px 48px;
+  background-color: #e50914;
+  color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  vertical-align: middle;
+  letter-spacing: 0.025rem;
+  transition: opacity ease;
+}
+
+.next-button:hover {
+  opacity: 0.7;
+}
+
+.footer-wrap {
+  height: 345.6px;
+  color: #737373;
+  font-size: 1em;
+  min-width: 190px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  background-color: #f3f3f3;
+  opacity: 1;
+}
+
+.footer-wrap a {
+  color: #737373;
+  position: relative;
+}
+
+.nf-footer {
+  margin: 0 30px;
+  width: calc(
+    100% - 60px
+  ); /* 부모 요소인 .footer-wrap과 같은 너비 적용 (좌우 30px씩 여백을 뺀 크기) */
+  height: 100%;
+}
+
+.nf-footer-top {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-top {
+  display: inline;
+  white-space: nowrap;
+}
+
+.footer-top-a {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.footer-top-a:hover {
+  text-decoration: underline;
+}
+
+.footer-link {
+  width: 176px;
+  height: 17px;
+}
+
+.nf-footer-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-link {
+  list-style-type: none;
+  width: calc(25% - 15px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.footer-link:nth-child(4n) {
+  margin-right: 0;
+}
+
+.footer-link a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative; /* hover 상태일 때 ::after 가상 요소의 위치를 설정하기 위해 relative로 설정 */
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+.language-picker {
+  width: 128px;
+  height: 48px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.language-picker-container {
+  position: relative;
+  display: inline-block;
+}
+
+.language-picker {
+  padding-left: 30px;
+}
+
+.language-icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.copy-text {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+
+.copy-text > div:not(:first-child) {
+  margin-top: 4px;
+}
+
+.copy-text > div:first-child {
+  margin-top: 20px;
+}
