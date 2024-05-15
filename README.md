@@ -1,4 +1,4 @@
-<h2> 엘리스 1차 스터디 프로젝트 - HTML, CSS, JavaScript</h2> 
+<h1> 🌈엘리스 1차 스터디 프로젝트 - HTML, CSS, JavaScript 🖥</h1> 
 
 ---
 
